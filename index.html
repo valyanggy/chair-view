@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+    <title>Chairs</title>
+</head>
+
+<body>
+
+    <div class="fullPage">
+
+        <div class="CSSgal">
+
+            <s id="s1"></s>
+            <s id="s2"></s>
+            <s id="s3"></s>
+            <s id="s4"></s>
+            <s id="s5"></s>
+
+            <div class="slider">
+
+
+                <div id="photo">
+                    <div id="inner">
+                        <h2>Urban</h2>
+                    </div>
+                    <div style="text-align:center">
+                        <button onclick="arotateView()">Rotate View</button>
+                        <video id="video1" width="420" poster="chair1.png">
+                          <source src="chair1.mp4" type="video/mp4">
+                          Your browser does not support HTML video.
+                        </video>
+
+                    </div>
+                </div>
+
+
+                <div id="photo">
+                    <div id="inner">
+                        <h2>CIRCE ARMCHAIR</h2>
+                    </div>
+
+                    <div style="text-align:center">
+                        <button onclick="brotateView()">Rotate View</button>
+                        <video id="video2" width="420" poster="chair2.png">
+                          <source src="chair2.mp4" type="video/mp4">
+                          Your browser does not support HTML video.
+                        </video>
+                    </div>
+                    <div id="display">
+                    </div>
+
+                </div>
+
+                <div id="photo">
+                    <div id="inner">
+                        <h2>SITTING BEAVER</h2>
+                    </div>
+                    <div style="text-align:center">
+                        <button onclick="crotateView()">Rotate View</button>
+                        <video id="video3" width="420" poster="chair3.png">
+                          <source src="chair3.mp4" type="video/mp4">
+                          Your browser does not support HTML video.
+                        </video>
+                    </div>
+                    <div id="displayr">
+                    </div>
+
+
+                </div>
+                <div id="photo">
+                    <div id="inner">
+                        <h2>RARE LUCITE</h2>
+                        <div style="text-align:center">
+                            <button onclick="drotateView()">Rotate View</button>
+                            <video id="video4" width="420" poster="chair4.png">
+                              <source src="chair4.mp4" type="video/mp4">
+                              Your browser does not support HTML video.
+                            </video>
+                        </div>
+                    </div>
+                    <div id="display">
+
+                    </div>
+
+                </div>
+                <div id="photo">
+                    <div id="inner">
+                        <h2>Lover's Stool</h2>
+                    </div>
+                    <div style="text-align:center">
+                        <button onclick="erotateView()">Rotate View</button>
+                        <video id="video5" width="420" poster="chair5.png">
+                          <source src="chair5.mp4" type="video/mp4">
+                          Your browser does not support HTML video.
+                        </video>
+                    </div>
+                    <div id="display">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="bullets">
+                <a href="#s1">1</a>
+                <a href="#s2">2</a>
+                <a href="#s3">3</a>
+                <a href="#s4">4</a>
+                <a href="#s5">5</a>
+            </div>
+
+            <div class="prevNext">
+                <div>
+                    <a href="#s5"><span>&#8592;</span></a>
+                    <a href="#s2"><span>&#8594;</span> </a>
+                </div>
+                <div>
+                    <a href="#s1"><span>&#8592;</span></a>
+                    <a href="#s3"><span>&#8594;</span></a>
+                </div>
+                <div>
+                    <a href="#s2"><span>&#8592;</span></a>
+                    <a href="#s4"><span>&#8594;</span></a>
+                </div>
+                <div>
+                    <a href="#s3"><span>&#8592;</span></a>
+                    <a href="#s5"><span>&#8594;</span></a>
+                </div>
+                <div>
+                    <a href="#s4"><span>&#8592;</span></a>
+                    <a href="#s1"><span>&#8594;</span></a>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="switch">
+        <div id="prev"><span>&#8592;</span> </div>
+        <div id="next"><span>&#8594;</span> </div>
+
+
+    </div>
+
+    <div class="controller">
+        <div class="audio-ctrl">
+            <br><br><br><br><br><br>
+            <div class="audio-ctrl">
+                <span>music</span>
+                <input type="range" class="volslider" id="elevator" value="0" maxlength="50">
+                <audio loop autoplay id="elevator-player" src="elevator.mp3"></audio>
+            </div>
+
+            <div class="audio-ctrl"><span>humidity</span>
+                <input type="range" class="volslider" id="rainfull" value="0" maxlength="50">
+                <audio loop autoplay id="rainfull-player" src="rainfall.mp3"></audio>
+            </div>
+
+            <div class="audio-ctrl"><span>voice</span>
+                <input type="range" class="volslider" id="baby" value="0" maxlength="50">
+                <audio loop autoplay id="baby-player" src="baby.mp3"></audio>
+            </div>
+
+            <div class="audio-ctrl"><span>nature</span>
+                <input type="range" class="volslider" id="bird" value="0" maxlength="50">
+                <audio loop autoplay id="bird-player" src="bird.mp3"></audio>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="travel">
+        <video id="places" autoplay poster="tabletop.png">
+            <source id="current" src="platform.mp4" type="video/mp4">
+            </video>
+        <figcaption style="display: none;">
+            <a id="0" href="platform.mp4">1</a>
+            <a id="1" href="window.mp4">2</a>
+            <a id="2" href="beach.mp4">3</a>
+            <a id="3" href="pan.mp4">4</a>
+            <a id="4" href="galaxy.mp4">5</a>
+            <a id="5" href="room.mp4">1</a>
+        </figcaption>
+
+
+    </div>
+
+    <!-- <div class="left-item" id="scene">
+    </div> -->
+
+    <!-- <div class="parent">
+        <div class="left">
+            <div class="left-item" id="name">
+            </div>
+        </div>
+
+
+        <div class="right">
+            <div class="right-item" id="top">
+                <div class="top-item" id="space">
+
+                </div>
+
+                <div class="top-item" id="detail">
+                    <div id="price"><br><br><br></div>
+                    <div id="year"></div>
+                </div>
+            </div>
+            <div class="right-item" id="middle">
+                <div class="middle-item" id="info">
+                </div>
+
+            </div>
+            <div class="right-item" id="bottom">
+                <div>
+
+
+                    <div class="audio-ctrl">
+                        <span>music</span>
+                        <input type="range" class="volslider" id="elevator" value="0" maxlength="50">
+                        <audio loop autoplay id="elevator-player" src="elevator.mp3"></audio>
+                    </div>
+
+                    <div class="audio-ctrl"><span>humidity</span>
+                        <input type="range" class="volslider" id="rainfull" value="0" maxlength="50">
+                        <audio loop autoplay id="rainfull-player" src="rainfall.mp3"></audio>
+                    </div>
+
+                    <div class="audio-ctrl"><span>voice</span>
+                        <input type="range" class="volslider" id="baby" value="0" maxlength="50">
+                        <audio loop autoplay id="baby-player" src="baby.mp3"></audio>
+                    </div>
+
+                    <div class="audio-ctrl"><span>nature</span>
+                        <input type="range" class="volslider" id="bird" value="0" maxlength="50">
+                        <audio loop autoplay id="bird-player" src="bird.mp3"></audio>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div> -->
+
+</body>
+
+</html>
